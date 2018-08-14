@@ -1,0 +1,29 @@
+{
+	"TestCaseId": "1006",
+	"TestCase": "DeleteLongSecurities",
+	"Input": {
+		"Name": "DeleteLongSecuritiesFromModel",
+		"Hierarchy": "1",
+		"LongSecurities": [
+			{
+				"LegacyId": "199",
+				"Type": "Long",
+				"Weight": "0.4"
+			},
+			{
+				"LegacyId": "378",
+				"Type": "Long",
+				"Weight": "0.3"
+			},
+			{
+				"LegacyId": "600",
+				"Type": "Long",
+				"Weight": "0.5"
+			}
+		]
+	},
+	"Output": {
+		"Name": "DeleteLongSecuritiesFromModel",
+		"ModelType": "SimpleModel"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"TestCaseId": "1001",
+	"TestCase": "CreateSimpleModel",
+	"Input": {
+		"Name": "CustomModel",
+		"Hierarchy": "1"
+	},
+	"Output": {
+		"Name": "CustomModel",
+		"ModelType": "SimpleModel"
+	}
+}

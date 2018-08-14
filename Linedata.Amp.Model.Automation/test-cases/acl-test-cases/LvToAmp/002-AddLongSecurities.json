@@ -1,0 +1,46 @@
+{
+	"TestCaseId":"1002",
+	"TestCase": "AddLongSecurities",
+	"Input": {
+		"Name": "ModelWithLongSecurities",
+		"Hierarchy": "1",
+		"LongSecurities": [
+			{
+				"LegacyId": "199",
+				"Type": "Long",
+				"Weight": "0.4"
+			},
+			{
+				"LegacyId": "378",
+				"Type": "Long",
+				"Weight": "0.3"
+			},
+			{
+				"LegacyId": "600",
+				"Type": "Long",
+				"Weight": "0.5"
+			}
+		]
+	},
+	"Output": {
+		"Name": "ModelWithLongSecurities",
+		"ModelType": "SimpleModel",
+		"LongSecurities": [
+			{
+				"LegacyId": "199",
+				"Type": "Long",
+				"Weight": "0.4"
+			},
+			{
+				"LegacyId": "378",
+				"Type": "Long",
+				"Weight": "0.3"
+			},
+			{
+				"LegacyId": "600",
+				"Type": "Long",
+				"Weight": "0.5"
+			}
+		]
+	}
+}

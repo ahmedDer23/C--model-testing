@@ -1,0 +1,29 @@
+{
+	"TestCaseId": "1007",
+	"TestCase": "DeleteShortSecurities",
+	"Input": {
+		"Name": "DeleteShortSecuritiesFromModel",
+		"Hierarchy": "1",
+		"ShortSecurities": [
+			{
+				"LegacyId": "208",
+				"Type": "Short",
+				"Weight": "0.25"
+			},
+			{
+				"LegacyId": "782",
+				"Type": "Short",
+				"Weight": "0.4"
+			},
+			{
+				"LegacyId": "803",
+				"Type": "Short",
+				"Weight": "0.35"
+			}
+		]
+	},
+	"Output": {
+		"Name": "DeleteShortSecuritiesFromModel",
+		"ModelType": "SimpleModel"
+	}
+}

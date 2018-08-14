@@ -1,0 +1,46 @@
+{
+	"TestCaseId": "1003",
+	"TestCase": "AddShortSecurities",
+	"Input": {
+		"Name": "ModelWithShortSecurities",
+		"Hierarchy": "1",
+		"ShortSecurities": [
+			{
+				"LegacyId": "208",
+				"Type": "Short",
+				"Weight": "0.25"
+			},
+			{
+				"LegacyId": "782",
+				"Type": "Short",
+				"Weight": "0.4"
+			},
+			{
+				"LegacyId": "803",
+				"Type": "Short",
+				"Weight": "0.35"
+			}
+		]
+	},
+	"Output": {
+		"Name": "ModelWithShortSecurities",
+		"ModelType": "SimpleModel",
+		"ShortSecurities": [
+			{
+				"LegacyId": "208",
+				"Type": "Short",
+				"Weight": "0.25"
+			},
+			{
+				"LegacyId": "782",
+				"Type": "Short",
+				"Weight": "0.4"
+			},
+			{
+				"LegacyId": "803",
+				"Type": "Short",
+				"Weight": "0.35"
+			}
+		]
+	}
+}

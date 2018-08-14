@@ -1,0 +1,61 @@
+{
+	"TestCaseId": "1005",
+	"TestCase": "UpdateShortSecurities",
+	"Input": {
+		"Name": "ModelWithUpdatedShortSecurities",
+		"Hierarchy": "1",
+		"ShortSecurities": [
+			{
+				"LegacyId": "208",
+				"Type": "Short",
+				"Weight": "0.25"
+			},
+			{
+				"LegacyId": "782",
+				"Type": "Short",
+				"Weight": "0.4"
+			},
+			{
+				"LegacyId": "803",
+				"Type": "Short",
+				"Weight": "0.35"
+			},
+			{
+				"LegacyId": "208",
+				"Type": "Short",
+				"Weight": "0.35"
+			},
+			{
+				"LegacyId": "782",
+				"Type": "Short",
+				"Weight": "0.25"
+			},
+			{
+				"LegacyId": "803",
+				"Type": "Short",
+				"Weight": "0.4"
+			}
+		]
+	},
+	"Output": {
+		"Name": "ModelWithUpdatedShortSecurities",
+		"ModelType": "SimpleModel",
+		"ShortSecurities": [
+			{
+				"LegacyId": "208",
+				"Type": "Short",
+				"Weight": "0.35"
+			},
+			{
+				"LegacyId": "782",
+				"Type": "Short",
+				"Weight": "0.25"
+			},
+			{
+				"LegacyId": "803",
+				"Type": "Short",
+				"Weight": "0.4"
+			}
+		]
+	}
+}

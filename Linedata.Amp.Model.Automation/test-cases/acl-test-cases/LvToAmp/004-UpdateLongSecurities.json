@@ -1,0 +1,62 @@
+{
+	"TestCaseId": "1004",
+	"TestCase": "UpdateLongSecurities",
+	"Input": {
+		"Name": "ModelWithUpdatedLongSecurities",
+		"Hierarchy": "1",
+		"LongSecurities": [
+			{
+				"LegacyId": "199",
+				"Type": "Long",
+				"Weight": "0.2"
+			},
+			{
+				"LegacyId": "378",
+				"Type": "Long",
+				"Weight": "0.3"
+			},
+			{
+				"LegacyId": "600",
+				"Type": "Long",
+				"Weight": "0.5"
+
+			},
+			{
+				"LegacyId": "199",
+				"Type": "Long",
+				"Weight": "0.4"
+			},
+			{
+				"LegacyId": "378",
+				"Type": "Long",
+				"Weight": "0.15"
+			},
+			{
+				"LegacyId": "600",
+				"Type": "Long",
+				"Weight": "0.45"
+			}
+		]
+	},
+	"Output": {
+		"Name": "ModelWithUpdatedLongSecurities",
+		"ModelType": "SimpleModel",
+		"LongSecurities": [
+			{
+				"LegacyId": "199",
+				"Type": "Long",
+				"Weight": "0.4"
+			},
+			{
+				"LegacyId": "378",
+				"Type": "Long",
+				"Weight": "0.15"
+			},
+			{
+				"LegacyId": "600",
+				"Type": "Long",
+				"Weight": "0.45"
+			}
+		]
+	}
+}

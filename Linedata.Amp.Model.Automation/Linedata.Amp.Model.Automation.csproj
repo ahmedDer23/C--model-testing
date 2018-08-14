@@ -1,0 +1,192 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net462</TargetFrameworks>
+    <LangVersion>7.1</LangVersion>
+    <AssemblyName>Linedata.Amp.Model.Automation</AssemblyName>
+    <RootNamespace>Linedata.Amp.Model.Automation</RootNamespace>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.5" />
+    <PackageReference Include="Linedata.Amp.Qa.Foundation" Version="1.0.1" />
+    <PackageReference Include="ReactiveDomain.Foundation" Version="0.8.17" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.1.2" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="2.6.1" />
+    <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.0" />
+    <PackageReference Include="System.Data.Common" Version="4.3.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.5.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test-cases\acl-test-cases\LvToAmp\001-CreateModel.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="test-cases\acl-test-cases\LvToAmp\002-AddLongSecurities.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="test-cases\acl-test-cases\LvToAmp\003-AddShortSecurities.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="test-cases\acl-test-cases\LvToAmp\004-UpdateLongSecurities.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="test-cases\acl-test-cases\LvToAmp\005-UpdateShortSecurities.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="test-cases\acl-test-cases\LvToAmp\006-DeleteLongSecurities.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="test-cases\acl-test-cases\LvToAmp\007-DeleteShortSecurities.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ACL.Service">
+      <HintPath>..\..\..\..\..\..\..\..\..\ACL\ACL.Service.exe</HintPath>
+    </Reference>
+    <Reference Include="Dapper">
+      <HintPath>bin\x64\Debug\net462\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>bin\x64\Debug\net462\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EventStore.ClientAPI">
+      <HintPath>bin\x64\Debug\net462\EventStore.ClientAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="EventStore.ClientAPI.Embedded">
+      <HintPath>bin\x64\Debug\net462\EventStore.ClientAPI.Embedded.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Annotations">
+      <HintPath>bin\x64\Debug\net462\JetBrains.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="KellermanSoftware.Compare-NET-Objects">
+      <HintPath>bin\x64\Debug\net462\KellermanSoftware.Compare-NET-Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DotNet.InternalAbstractions">
+      <HintPath>bin\x64\Debug\net462\Microsoft.DotNet.InternalAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration">
+      <HintPath>bin\x64\Debug\net462\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>bin\x64\Debug\net462\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.FileExtensions">
+      <HintPath>bin\x64\Debug\net462\Microsoft.Extensions.Configuration.FileExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Json">
+      <HintPath>bin\x64\Debug\net462\Microsoft.Extensions.Configuration.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyModel">
+      <HintPath>bin\x64\Debug\net462\Microsoft.Extensions.DependencyModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions">
+      <HintPath>bin\x64\Debug\net462\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical">
+      <HintPath>bin\x64\Debug\net462\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing">
+      <HintPath>bin\x64\Debug\net462\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives">
+      <HintPath>bin\x64\Debug\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Model.Domain">
+      <HintPath>..\..\..\..\..\..\..\..\..\ACL\Model.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>bin\x64\Debug\net462\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveDomain.Core">
+      <HintPath>bin\x64\Debug\net462\ReactiveDomain.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveDomain.Foundation">
+      <HintPath>bin\x64\Debug\net462\ReactiveDomain.Foundation.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveDomain.Messaging">
+      <HintPath>bin\x64\Debug\net462\ReactiveDomain.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveDomain.Persistence">
+      <HintPath>bin\x64\Debug\net462\ReactiveDomain.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI">
+      <HintPath>bin\x64\Debug\net462\ReactiveUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog">
+      <HintPath>bin\x64\Debug\net462\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Enrichers.Environment">
+      <HintPath>bin\x64\Debug\net462\Serilog.Enrichers.Environment.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Settings.Configuration">
+      <HintPath>bin\x64\Debug\net462\Serilog.Settings.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File">
+      <HintPath>bin\x64\Debug\net462\Serilog.Sinks.File.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.RollingFile">
+      <HintPath>bin\x64\Debug\net462\Serilog.Sinks.RollingFile.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>bin\x64\Debug\net462\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlClient">
+      <HintPath>bin\x64\Debug\net462\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>bin\x64\Debug\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>bin\x64\Debug\net462\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>bin\x64\Debug\net462\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>bin\x64\Debug\net462\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>bin\x64\Debug\net462\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Windows.Threading">
+      <HintPath>bin\x64\Debug\net462\System.Reactive.Windows.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>bin\x64\Debug\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.abstractions">
+      <HintPath>bin\x64\Debug\net462\xunit.abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.assert">
+      <HintPath>bin\x64\Debug\net462\xunit.assert.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.core">
+      <HintPath>..\..\model-automation-master\Linedata.Amp.Model.Automation\bin\Debug\net462\xunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.execution.desktop">
+      <HintPath>bin\x64\Debug\net462\xunit.execution.desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.runner.reporters.net452">
+      <HintPath>bin\x64\Debug\net462\xunit.runner.reporters.net452.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.runner.utility.net452">
+      <HintPath>bin\x64\Debug\net462\xunit.runner.utility.net452.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.runner.visualstudio.testadapter">
+      <HintPath>bin\x64\Debug\net462\xunit.runner.visualstudio.testadapter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
